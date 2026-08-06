@@ -238,6 +238,28 @@ a:hover {
   font-size: 0.95rem;
 }
 
+.notice-danger {
+  border-left-color: #b33a2b;
+  background: rgba(179, 58, 43, 0.1);
+}
+
+.panel-danger {
+  border: 1.5px solid rgba(179, 58, 43, 0.35);
+  background: linear-gradient(180deg, rgba(179, 58, 43, 0.08), rgba(255, 255, 255, 0.55));
+}
+
+.panel-danger h2 {
+  color: #7a2218;
+}
+
+.site-footer .safety-line {
+  max-width: var(--max);
+  margin: 0.75rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #5a4030;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 1.5rem 0 2.5rem;

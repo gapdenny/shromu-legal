@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk" data-lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shromu — mushroom flush map</title>
+  <meta name="description" content="Shromu — on-device mushroom flush map for Ukraine. Privacy, Terms, and support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,650&family=Source+Sans+3:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="lang.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html">Shromu</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="privacy/">Privacy</a>
+        <a href="terms/">Terms</a>
+        <a href="support/">Support</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="uk" aria-pressed="true">UA</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1 class="lang-uk">Мапа появи грибів</h1>
+        <h1 class="lang-en">Mushroom flush map</h1>
+        <p class="lede lang-uk">Де лісу затишніше для обраного виду — на пристрої, без акаунта. PRO додає погоду й прогноз на точку.</p>
+        <p class="lede lang-en">See where a chosen mushroom is more likely to feel at home — on-device, no account. PRO adds weather and a pin forecast.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://apps.apple.com/app/id0000000000">App Store</a>
+          <a class="btn btn-ghost" href="support/">
+            <span class="lang-uk">Підтримка</span>
+            <span class="lang-en">Support</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 class="lang-uk">Для App Store</h2>
+        <h2 class="lang-en">For the App Store</h2>
+        <ul class="lang-uk">
+          <li><a href="privacy/">Політика конфіденційності</a></li>
+          <li><a href="terms/">Умови використання (EULA)</a></li>
+          <li><a href="support/">Сторінка підтримки</a> · <a href="mailto:support@shromu.app">support@shromu.app</a></li>
+        </ul>
+        <ul class="lang-en">
+          <li><a href="privacy/">Privacy Policy</a></li>
+          <li><a href="terms/">Terms of Use (EULA)</a></li>
+          <li><a href="support/">Support page</a> · <a href="mailto:support@shromu.app">support@shromu.app</a></li>
+        </ul>
+      </section>
+
+      <section class="panel panel-danger">
+        <h2 class="lang-uk">Важливо знати — безпека</h2>
+        <h2 class="lang-en">Please know — safety</h2>
+        <p class="lang-uk"><strong>Гриби можуть бути отруйними або смертельними.</strong></p>
+        <ul class="lang-uk">
+          <li>Мапа <strong>не</strong> показує «лише їстівні» місця — індекс оцінює умови (біотоп / погода), а не вид і не їстівність.</li>
+          <li>На одній галявині можуть рости їстівні й отруйні види. Кольори — не дозвіл «їсти».</li>
+          <li>Ідентифікація, закони збору і ризик для здоров’я — <strong>повністю на вас</strong>.</li>
+          <li>При сумніві — не беріть. При підозрі на отруєння — негайна медична допомога.</li>
+        </ul>
+        <p class="lang-uk">Повний юридичний текст: <a href="terms/">Умови використання</a>.</p>
+        <p class="lang-en"><strong>Mushrooms can be poisonous or deadly.</strong></p>
+        <ul class="lang-en">
+          <li>The map is <strong>not</strong> an “edible-only” layer — it scores conditions (habitat / weather), not species or edibility.</li>
+          <li>Edible and toxic species can share the same patch. Colour is not permission to eat.</li>
+          <li>Identification, foraging laws, and health risk are <strong>entirely yours</strong>.</li>
+          <li>When in doubt, leave it. If you suspect poisoning — seek emergency care.</li>
+        </ul>
+        <p class="lang-en">Full legal text: <a href="terms/">Terms of Use</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="privacy/">Privacy</a>
+        <a href="terms/">Terms</a>
+        <a href="support/">Support</a>
+      </nav>
+      <p>© <span id="y"></span> Shromu · <a href="mailto:support@shromu.app">support@shromu.app</a></p>
+          <p class="safety-line lang-uk"><strong>Безпека:</strong> гриби можуть бути отруйними. Мапа не «лише їстівні». Ідентифікація — на вас.</p>
+      <p class="safety-line lang-en"><strong>Safety:</strong> mushrooms can be poisonous. Map is not edible-only. Identification is yours.</p>
+    </footer>
+  </div>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
